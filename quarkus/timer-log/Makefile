@@ -1,11 +1,9 @@
 # Variables
 
-# make package CAMEL_CMD=camel
 CAMEL_CMD ?= jbang camel
-# make k3s-run RUN_MODE=dev
-RUN_MODE ?= logs
+RUN_MODE ?= dev
 
-package: k3s-package
+package: k8s-package
 
 clean:
 	@CUR_DIR=$$(pwd | awk -F'/' '{print $$(NF-1)"/"$$(NF)}') && echo "Clean $$CUR_DIR"
