@@ -17,9 +17,10 @@
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.version>3.15.1</quarkus.platform.version>
-        <jkube.container-image.name>examples/timer-log:1.0.0</jkube.container-image.name>
+        <jkube.container-image.registry>image-registry.openshift-image-registry.svc:5000</jkube.container-image.registry>
+        <jkube.container-image.name>image-registry.openshift-image-registry.svc:5000/examples/timer-log:1.0.0</jkube.container-image.name>
         <jkube.container-image.imagePullPolicy>IfNotPresent</jkube.container-image.imagePullPolicy>
-        <jkube.maven.plugin>kubernetes-maven-plugin</jkube.maven.plugin>
+        <jkube.maven.plugin>openshift-maven-plugin</jkube.maven.plugin>
         <jkube.build.strategy>docker</jkube.build.strategy>
         <jkube.skip.push>true</jkube.skip.push>
         <jkube.version>1.17.0</jkube.version>

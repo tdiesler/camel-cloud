@@ -7,7 +7,7 @@ package: k8s-package
 
 clean:
 	@CUR_DIR=$$(pwd | awk -F'/' '{print $$(NF-1)"/"$$(NF)}') && echo "Clean $$CUR_DIR"
-	@rm -rf .camel-* .mvn src target mvnw mvnw.cmd pom.xml README.md
+	@rm -rf .camel-* .mvn src target mvnw mvnw.cmd pom.xml readme.md
 
 # Kubernetes ===========================================================================================================
 
